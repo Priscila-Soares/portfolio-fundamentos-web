@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon TCG</title>
-</head>
-<body>
-   <ul>
-    <li><a href="index.html">Home</a></li>
-      <li><a href="contato.html">Contato</a></li>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Generation Brasil">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<title>Meu Perfil</title>
+	</head>
+	<body>
+		<!-- Cabeçalho da Página (header) -->
+		<header>
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content">
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
+					<!-- Seu nome -->
+					<h1>Generation Brasil</h1>
+				</div>
 
-   </ul>
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+					<!-- Menu da Página -->
+					<nav>
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html"> Home </a>
+							</li>
+							<li>
+								<a href="contato.html"> Contato </a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-   <h1>Decks Pokémon TCG</h1>
+		<!-- Seção Principal da Página (main) -->
+		<main>
+			
+			<!-- Seção Formulário de Contato e Redes Sociais -->
+			<section id="contact">
+				
+				<!-- Seção do Formulário-->
+				<form action="#" method="submit" id="formulario">
+					<label for="nome">Nome: </label>
+					<input
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Digite seu nome"
+						required
+					/>
+					<span id="txtNome"></span>
 
-   <p>
-    Pokem ipsum dolor sit amet Gulpin Trubbish Ciccino Barboach Dragonite Omanyte. Duis aute irure dolor in reprehenderit in voluptate.
-    Kyurem Ivysaur Luvdisc Golem Yellow Ursaring. Rage Emboar deserunt mollit Jesse Delcatty Dratini Whismur. Squirtle Harden Pignite. 
-    Typhlosion Magmar Liepard Rotom. Silver Splash Simisear surrender now or prepare to fight Glameow Camerupt Rufflet.
-    </p>
+					<label for="email">Email: </label>
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Digite seu email"
+						required
+					/>
+					<span id="txtEmail"></span>
 
-    <p>
-    Wing Attack Lugia Granbull Grumpig Tornadus Butterfree Purugly. Pokemon Rotom Deino Kangaskhan Tangrowth Machamp Meowth. 
-    Bug Swellow Exploud Tropius Flareon Octillery Taillow. Pokemon 4Ever Magby Slash Cresselia Boulder Badge Hitmontop Machop. 
-    Scratch Drowzee Rotom Dragon Helix Fossil Dragonite Beedrill.
-    </p>
+					<label for="subject">Assunto: </label>
+					<input
+						id="subject"
+						type="text"
+						name="subject"
+						placeholder="Digite o título da mensagem"
+						required
+					/>
+					<span id="txtSubject"></span>
 
-    <p>
-    Team Rocket Burnt Berry Feraligatr Espeon Ivysaur Cradily Taillow. Mineral Badge Arbok Fighting Arcanine I like shorts Cofagrigus Larvitar. 
-    Fog Badge Yanmega Staraptor Swadloon Shedinja Shellos Strength. Celadon City ullamco laboris nisi Flareon Glalie Swampert Kricketot.
-    I like shorts. Earthquake Scratch Flareon ut enim ad minim veniam Altaria Purugly Stoutland.
-    </p>
+					<label for="message">Mensagem: </label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Digite sua mensagem"
+						required
+					>
+					</textarea>
 
-    <p>
-    Vine Whip Unown Sentret Raticate Tropius Slakoth Kanto. Volcano Badge Stoutland Mismagius Gothorita Nuzleaf Yamask Shelmet. 
-    Ivysaur Ash's mother Golurk Pikachu Celadon City Sandshrew Stunfisk. Celadon Department Store Krokorok Weedle Timburr. 
-    Pachirisu Spinarak Duosion. Boulder Badge Horsea Hippopotas Nidorina Ground Officer Jenny Medicham.
-    </p>
+					<button type="submit">Enviar</button>
+				</form>
 
-    <p>
-    Wing Attack Chimchar to catch them is my real test Marill Hoenn Mystery Gift Kabutops. Ash Meowth Clefairy Simisage Sandslash Great Ball. 
-    Psyduck. Marsh Badge Wobbuffet Pidgeotto Staryu Gastly Venomoth Ash. S.S. Anne Sonic Boom Jigglypuff Natu Joltik Treecko Kecleon. 
-    Glitch City Tirtouga Mint Berry Beedrill Shelmet Wing Attack Shelgon.
-   </p>
+				<!-- Seção do Google Maps -->
+				<article id="mapa">
 
-   <h2>Coleção Ilha Mítica - Cartas Especiais</h2>
+				</article>
+			</section>
+		</main>
 
-   <img src="assets/img/03.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/18.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/25.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/26.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/32.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/46.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/59.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/69.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/70.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/71.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/72.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/73.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/74.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/75.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/76.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/77.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/78.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/79.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/83.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/84.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/85.jpg" alt="Carta Confiscada Pela Equipe Rocket">
-   <img src="assets/img/86.jpg" alt="Carta Confiscada Pela Equipe Rocket">
+		<!-- Rodapé da Página (footer) -->
+		<footer>
+			<!-- Seção de Contato - Redes Sociais -->
+			<section id="redes_sociais">
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" />
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" />
+				</a>
+			</section>
 
-   
-
-   <h3>Vídeo do Deck Ilha Mítica</h3>
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/7D2DwTCLo3E?si=aHx3bNG7BBYTsPbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</body>
+			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+		</footer>
+	</body>
 </html>
