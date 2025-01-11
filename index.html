@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+
+    <!-- Código copiado do Google Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- Fim do Código -->
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+
+        <link rel="icon" type="iamge/svg" href="./assets/img/favicon.svg">
+
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
 		<title>Meu Perfil</title>
 	</head>
 	<body>
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 					<!-- Seu nome -->
@@ -39,77 +54,85 @@
 
 		<!-- Seção Principal da Página (main) -->
 		<main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome">Nome: </label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
+
+			<!-- Seção Sobre você -->
+			<section id="about" class="flex_start">
+
+				<!-- Título da Seção -->
+				<h2>Sobre a Generation Brasil</h2>
+
+				<!-- Conteúdo da Seção -->
+				<div id="conteudo" class="flex">
+
+					<!-- Imagem do criador do conteúdo -->
+					<img
+						src="./assets/img/user_01.svg"
+						alt="Foto do criador desse conteudo"
+
+                        class="img_profile"
 					/>
-					<span id="txtNome"></span>
 
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
-
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
-
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
-
-					<button type="submit">Enviar</button>
-				</form>
-
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
-
-				</article>
+					<!-- Texto sobre o criador do conteúdo -->
+					<article id="sobre_texto">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Voluptatem odio possimus, dolorem earum atque
+							itaque quas soluta placeat iure omnis porro cum
+							debitis sequi libero! Deleniti vitae quis hic
+							cumque. Lorem ipsum, dolor sit amet consectetur
+							adipisicing elit. Eius inventore ullam, quia
+							deserunt enim cumque hic officia repudiandae ad ab
+							et sapiente qui vitae accusamus adipisci provident
+							sit assumenda laboriosam!
+						</p>
+					</article>
+				</div>
 			</section>
+
+			<!-- Seção contendo um vídeo de sua preferência -->
+			<section id="video" class="flex_start">
+				
+				<!-- Título da Seção -->
+				<h2>Meu vídeo favorito:</h2>
+
+				<!-- Vídeo da Seção -->
+				<div class="youtube" class="flex">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+
+			</section>
+
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais -->
-			<section id="redes_sociais">
-				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
+		<footer class="flex">
 
-			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+			<!-- Seção de Contato - Redes Sociais-->
+            <section id="redes_sociais">
+
+                    <a href="">
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/github.svg" alt="Github" />
+                    </a>
+                    <a href="">
+                        <img src="assets/img/instagram.svg" alt="Instagram" />
+                    </a>
+
+            </section>
+
+			<h3>
+				Feito com 🧡 por Generation Brasil - 2024
+			</h3>
+
 		</footer>
 	</body>
 </html>
